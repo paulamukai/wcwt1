@@ -44,15 +44,15 @@ for page in pages:
   for container in movie_containers:
     if container.find('did',class_='ratins-mmetascore') is not None:
       title = container.h3.a.text
-      titles.append(tittle)
+      titles.append(title)
 
   #estamos capturando os anos
       if container.h3.find('span', class_= 'lister-item-year text-muted unbold') is not
         year = container.h3.find('span', class_='lister-item-year text-muted unbold').      #botão direito (inspecionar) site
-        year.append(year)
+        years.append(year)
       
       else:
-        year.append(None)
+        years.append(None)
 
         #captura as avaliações
       if container.p.find('span',class_='certificate') is not None
