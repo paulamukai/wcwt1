@@ -40,7 +40,7 @@ for page in pages:
   page_html = BeautifulSoup(response.text, 'html.parser')
 
 
-  movie_containers = page_html.find_all('div', class_ = 'lister-item modem-advanced')
+  movie_containers = page_html.find_all('div', class_ = 'lister-item mode-advanced')
   for container in movie_containers:
     if container.find('did',class_='ratins-mmetascore') is not None:
       title = container.h3.a.text
